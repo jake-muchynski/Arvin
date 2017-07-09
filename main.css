@@ -1,0 +1,175 @@
+@font-face{
+	font-family: OpenSans;
+	src: url(assets/OpenSans-Bold.ttf);
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	font-family:"OpenSans";
+}
+
+span{
+	display: block;
+	height: 10vh;
+}
+
+span h1{
+	text-align: center;
+	padding-top: 1vh;
+	margin: 0px;
+	font-size: 5vh;
+	color: #067BC2;
+}
+
+
+header{
+	height: 100%;
+}
+
+#navbar{
+	background:#0A1128;
+	display: block;
+	width:20%;
+	height:100%;
+	position: absolute;
+	left: 80%;
+	top:0px;
+}
+
+#left-half{
+	position: absolute;
+	background-image: url('assets/239H.jpg');
+	background-size: cover;
+	background-position: center;
+	background-color: #FF5E5B;
+	background-blend-mode: multiply;
+	height: 90vh;
+	width: 50%;
+	left: 0px;
+}
+
+#left-half h2{
+	color: #FEFCFB;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90vh; 
+	font-size: 5vw;
+	margin: 0px;
+
+}
+
+#right-half{
+	position: absolute;
+	background-image: url('assets/375H.jpg');
+	background-size: cover;
+	background-position: center;
+	background-color: #067BC2;
+	background-blend-mode: multiply;
+	height: 90vh;
+	width: 50%;
+	right: 0px;
+}
+
+#right-half h2{
+	color: #FEFCFB;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90vh; 
+	font-size: 5vw;
+	margin: 0px;
+
+}
+
+#left-half.compress{
+	width: 40%;
+}
+
+#right-half.compress{
+	width: 40%;
+	right: 20%;
+}
+
+a.width {
+	display: block;
+}
+
+#navbar.visible{
+	animation-name: example;
+	animation-duration: .2s;
+}
+
+@keyframes example{
+	0% {width: 0%}
+	100% {width: -20%}
+}
+
+#navbar.invisible{
+	display: none;
+}
+
+
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+	text-align: center;
+	height: 10vh
+}
+
+ul li:nth-child(1) {
+	background:#067BC2;
+}
+
+ul li:nth-child(2) {
+	background:#0E6BA8;
+}
+
+ul li:nth-child(3) {
+	background: #034078;
+}
+
+ul li:nth-child(4) {
+	background: #001F54;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 3.3vh 10px;
+	font-size: 3vh;
+}
+
+#navbar-button{
+	display: inline-block;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+
+#navbar-button span{
+	height:1px;
+	background:#067BC2;
+	margin-bottom:5px;
+	display:block;
+}
+
+#navbar-button span:nth-child(2){
+	width:75%;
+}
+
+#navbar-button span:nth-child(3){
+	width:50%;
+}
