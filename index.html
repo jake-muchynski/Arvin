@@ -1,3 +1,6 @@
+---
+
+---
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -9,35 +12,9 @@
 </head>
 
 <body>
-	<header>
-		<span><h1>ARVIN AIR SYSTEMS</h1></span>
-
-		<div id="left-half">
-			<h2>INDUSTRIAL</h2>
-		</div>
-
-		<div id="right-half">
-			<h2>COMMERCIAL</h2>
-		</div>
-
-		<div id="navbar">
-			<ul>
-				<div id="button-close">
-					<li><a href="#" class="width">X</a></li>
-				</div>
-				<li><a href="index.html" class="width">HOME</a></li>
-				<li><a href="#" class="width">ABOUT US</a></li>
-				<li><a href="#" class="width">CONTACT US</a></li>
-			</ul>
-		</div>
-		<div id="navbar-button">
-				<span></span>
-				<span></span>
-				<span></span>
-		</div>
-
-		
-	</header>
+	{% include header.html %}
+	
+	{% include Landing.html %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 

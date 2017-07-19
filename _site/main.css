@@ -1,6 +1,31 @@
+@media (min-width: 900px){
+	header span h1{
+		text-align: center;
+		padding-top: .5vh;
+		margin: 0px;
+		color: #067BC2;
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 900px){
+	header span h1{
+	text-align: center;
+	padding-top: .5vh;
+	margin: 0px;
+	font-size: 5.5vw;
+	color: #067BC2;
+	}
+}
+
 @font-face{
-	font-family: OpenSans;
+	font-family: OpenSans-Bold;
 	src: url(assets/OpenSans-Bold.ttf);
+}
+
+@font-face{
+	font-family: OpenSans-Regular;
+	src: url(assets/OpenSans-Regular.ttf);
 }
 
 html{
@@ -9,27 +34,21 @@ html{
 
 body{
 	margin:0px;
-	padding:0px;
 	height: 100%;
-	font-family:"OpenSans";
+	font-family:"OpenSans-Bold";
 }
-
-span{
-	display: block;
-	height: 10vh;
-}
-
-span h1{
-	text-align: center;
-	padding-top: 1vh;
-	margin: 0px;
-	font-size: 5vh;
-	color: #067BC2;
-}
-
 
 header{
-	height: 100%;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: white;
+	z-index: 1;
+}
+
+header span{
+	display: block;
+	height: 10vh;
 }
 
 #navbar{
@@ -37,7 +56,7 @@ header{
 	display: block;
 	width:20%;
 	height:100%;
-	position: absolute;
+	position: fixed;
 	left: 80%;
 	top:0px;
 }
@@ -49,7 +68,7 @@ header{
 	background-position: center;
 	background-color: #FF5E5B;
 	background-blend-mode: multiply;
-	height: 90vh;
+	height: 100vh;
 	width: 50%;
 	left: 0px;
 }
@@ -58,7 +77,7 @@ header{
 	color: #FEFCFB;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 90vh; 
+	line-height: 100vh; 
 	font-size: 5vw;
 	margin: 0px;
 
@@ -71,7 +90,7 @@ header{
 	background-position: center;
 	background-color: #067BC2;
 	background-blend-mode: multiply;
-	height: 90vh;
+	height: 100vh;
 	width: 50%;
 	right: 0px;
 }
@@ -80,7 +99,7 @@ header{
 	color: #FEFCFB;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 90vh; 
+	line-height: 100vh; 
 	font-size: 5vw;
 	margin: 0px;
 
@@ -113,7 +132,6 @@ a.width {
 	display: none;
 }
 
-
 ul{
 	margin:0px;
 	padding:0px;
@@ -122,7 +140,7 @@ ul{
 ul li{
 	list-style:none;
 	text-align: center;
-	height: 10vh
+	height: 10vh;
 }
 
 ul li:nth-child(1) {
@@ -172,4 +190,61 @@ ul li a{
 
 #navbar-button span:nth-child(3){
 	width:50%;
+}
+
+#Contact{
+	position: absolute;
+	top: 10%;
+	width: 100vw;
+	text-align: center;
+	font-family:"OpenSans-Regular";
+	color: #067BC2;
+}
+
+#Contact form{
+	max-width: 450px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+
+}
+
+#Contact h2{
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#Contact label{
+	display: block;
+	float: left;
+	width: 46%;
+  	margin: 0 auto;
+  	padding-right: 2%;
+}
+
+#Contact input{
+	width: 100%;
+}
+#Contact span{
+	display: block;
+	width: 200%;
+
+}
+
+#Contact textarea{
+	width: 200%
+}
+
+#submit-button{
+	display: block;
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 10vh;
+
+}
+
+#landing{
+	height: 100vh;
 }
