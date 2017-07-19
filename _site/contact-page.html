@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Arvin Air</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+	<span><h1>ARVIN AIR SYSTEMS</h1></span>
+	<div id="navbar">
+		<ul>
+			<div id="button-close">
+				<li><a href="#" class="width">X</a></li>
+			</div>
+			<li><a href="index.html" class="width">HOME</a></li>
+			<li><a href="#" class="width">ABOUT US</a></li>
+			<li><a href="contact-page.html" class="width">CONTACT US</a></li>
+		</ul>
+	</div>
+	<div id="navbar-button">
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
+</header>
+	
+	<section>
+	<div id="Contact">
+		<h2>LETS WORK TOGETHER!</h2>	
+		<form action="https://formspree.io/jake.muchynski@gmail.com" method="POST">
+
+			<label>Your Name
+			<input type="text" name="name"></label>
+
+			<label>Your Email
+			<input type="email" name="_replyto"></label>
+
+			<label><span>Description</span><textarea name="message"></textarea></label>
+			
+			<div id="submit-button">
+				<input type="submit" value="Send">
+			</div>
+		</form>	
+	</div>
+</section>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$('#navbar').addClass('invisible')
+	$('#left-half').addClass('expand')
+	$('#right-half').addClass('expand')
+	$(document).ready(function(){
+		$('#navbar-button').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#left-half').toggleClass("compress expand")
+			$('#right-half').toggleClass("compress expand")
+		});
+	});
+	$(document).ready(function(){
+		$('#button-close').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#left-half').toggleClass("compress expand")
+			$('#right-half').toggleClass("compress expand")
+		});
+	});
+	</script>
+</body>

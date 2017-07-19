@@ -1,0 +1,2 @@
+baseurl: /Index
+exclude: ['README.md']
