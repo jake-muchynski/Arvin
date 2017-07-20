@@ -1,11 +1,11 @@
 @font-face{
 	font-family: OpenSans-Bold;
-	src: url(assets/OpenSans-Bold.ttf);
+	src: url(OpenSans-Bold.ttf);
 }
 
 @font-face{
 	font-family: OpenSans-Regular;
-	src: url(assets/OpenSans-Regular.ttf);
+	src: url(OpenSans-Regular.ttf);
 }
 
 html{
@@ -34,7 +34,7 @@ header span h1{
 	text-align: center;
 	padding-top: .75vh;
 	margin: 0px;
-	color: #FEFCFB;
+	color: #067BC2;
 	font-size: 3em;
 }
 
@@ -46,63 +46,6 @@ header span h1{
 	position: fixed;
 	left: 80%;
 	top:0px;
-}
-
-#left-half{
-	position: absolute;
-	background-image: url('assets/239H.jpg');
-	background-size: cover;
-	background-position: center;
-	background-color: #FF5E5B;
-	background-blend-mode: multiply;
-	height: 100vh;
-	width: 50%;
-	left: 0px;
-}
-
-#left-half h2{
-	color: #FEFCFB;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 100vh; 
-	font-size: 5vw;
-	margin: 0px;
-
-}
-
-#right-half{
-	position: absolute;
-	background-image: url('assets/375H.jpg');
-	background-size: cover;
-	background-position: center;
-	background-color: #067BC2;
-	background-blend-mode: multiply;
-	height: 100vh;
-	width: 50%;
-	right: 0px;
-}
-
-#right-half h2{
-	color: #FEFCFB;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 100vh; 
-	font-size: 5vw;
-	margin: 0px;
-
-}
-
-#left-half.compress{
-	width: 40%;
-}
-
-#right-half.compress{
-	width: 40%;
-	right: 20%;
-}
-
-a.width {
-	display: block;
 }
 
 #navbar.visible{
@@ -153,6 +96,10 @@ ul li a{
 	font-size: 3vh;
 }
 
+a.width {
+	display: block;
+}
+
 #navbar-button{
 	display: inline-block;
 	width:20px;
@@ -170,7 +117,7 @@ ul li a{
 
 #navbar-button span{
 	height:1px;
-	background:#FEFCFB;
+	background:#067BC2;
 	margin-bottom:5px;
 	display:block;
 }
@@ -183,6 +130,61 @@ ul li a{
 	width:50%;
 }
 
-#landing{
-	height: 100vh;
+#Contact{
+	position: relative;
+	top: 10%;
+	width: 100vw;
+	text-align: center;
+	font-family:"OpenSans-Regular";
+	color: #067BC2;
+}
+
+#Contact form{
+	max-width: 450px;
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+
+}
+
+#Contact h2{
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#Contact label{
+	display: block;
+	float: left;
+	width: 46%;
+  	margin: 0 auto;
+  	padding-right: 2%;
+}
+
+#Contact input{
+	width: 100%;
+}
+#Contact span{
+	display: block;
+	width: 200%;
+
+}
+
+#Contact textarea{
+	width: 200%
+}
+
+#submit-button{
+	display: block;
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 10vh;
+
+}
+
+section{
+	display: block;
+	height: 80%;
+	padding-top: 5%;
 }

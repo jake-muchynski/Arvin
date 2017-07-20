@@ -6,7 +6,7 @@
 
 <head>
 	<title>Arvin Air</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="assets/contact.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,6 +25,7 @@
 	$(document).ready(function(){
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
 			$('#left-half').toggleClass("compress expand")
 			$('#right-half').toggleClass("compress expand")
 		});
@@ -32,6 +33,7 @@
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
 			$('#left-half').toggleClass("compress expand")
 			$('#right-half').toggleClass("compress expand")
 		});

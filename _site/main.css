@@ -1,23 +1,3 @@
-@media (min-width: 900px){
-	header span h1{
-		text-align: center;
-		padding-top: .5vh;
-		margin: 0px;
-		color: #067BC2;
-		font-size: 50px;
-	}
-}
-
-@media (max-width: 900px){
-	header span h1{
-	text-align: center;
-	padding-top: .5vh;
-	margin: 0px;
-	font-size: 5.5vw;
-	color: #067BC2;
-	}
-}
-
 @font-face{
 	font-family: OpenSans-Bold;
 	src: url(assets/OpenSans-Bold.ttf);
@@ -42,13 +22,20 @@ header{
 	position: fixed;
 	width: 100%;
 	top: 0;
-	background-color: white;
 	z-index: 1;
 }
 
 header span{
 	display: block;
 	height: 10vh;
+}
+
+header span h1{
+	text-align: center;
+	padding-top: .75vh;
+	margin: 0px;
+	color: #FEFCFB;
+	font-size: 3em;
 }
 
 #navbar{
@@ -177,9 +164,13 @@ ul li a{
 	right: 0px;
 }
 
+#navbar-button.invisible{
+	display: none;
+}
+
 #navbar-button span{
 	height:1px;
-	background:#067BC2;
+	background:#FEFCFB;
 	margin-bottom:5px;
 	display:block;
 }
@@ -190,59 +181,6 @@ ul li a{
 
 #navbar-button span:nth-child(3){
 	width:50%;
-}
-
-#Contact{
-	position: absolute;
-	top: 10%;
-	width: 100vw;
-	text-align: center;
-	font-family:"OpenSans-Regular";
-	color: #067BC2;
-}
-
-#Contact form{
-	max-width: 450px;
-	width: 50%;
-	display: inline-block;
-	text-align: center;
-
-}
-
-#Contact h2{
-	margin: 0;
-	padding: 0;
-	margin: 0;
-}
-
-#Contact label{
-	display: block;
-	float: left;
-	width: 46%;
-  	margin: 0 auto;
-  	padding-right: 2%;
-}
-
-#Contact input{
-	width: 100%;
-}
-#Contact span{
-	display: block;
-	width: 200%;
-
-}
-
-#Contact textarea{
-	width: 200%
-}
-
-#submit-button{
-	display: block;
-	position: relative;
-	width: 50%;
-	margin: 0 auto;
-	padding-bottom: 10vh;
-
 }
 
 #landing{

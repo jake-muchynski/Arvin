@@ -17,7 +17,7 @@
 				<li><a href="#" class="width">X</a></li>
 			</div>
 			<li><a href="index.html" class="width">HOME</a></li>
-			<li><a href="#" class="width">ABOUT US</a></li>
+			<li><a href="about-page.html" class="width">ABOUT US</a></li>
 			<li><a href="contact-page.html" class="width">CONTACT US</a></li>
 		</ul>
 	</div>
@@ -49,6 +49,7 @@
 	$(document).ready(function(){
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
 			$('#left-half').toggleClass("compress expand")
 			$('#right-half').toggleClass("compress expand")
 		});
@@ -56,6 +57,7 @@
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
 			$('#left-half').toggleClass("compress expand")
 			$('#right-half').toggleClass("compress expand")
 		});
