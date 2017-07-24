@@ -1,3 +1,51 @@
+@media (max-width: 1400px){
+	#logo{
+		display: none;
+	}
+
+	#bottom-logo p{
+		position: absolute;
+		color: #FEFCFB;
+		text-align: center;
+		margin: 0px;
+		width: 100%;
+		top: 97%;
+		font-size: 0.8vw;
+	}
+}
+
+@media (min-width: 1400px){
+	#logo{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 5%;
+	height: 100%;
+	width: 10%;
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	}
+
+	#bottom-logo{
+		display: block;
+		position: relative;
+		height: 100%;
+		background-image: url(logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#bottom-logo p{
+		position: absolute;
+		color: #FEFCFB;
+		text-align: center;
+		margin: 0px;
+		width: 100%;
+		top: 57%;
+		font-size: 0.8vw;
+	}
+}
+
 @font-face{
 	font-family: OpenSans-Bold;
 	src: url(OpenSans-Bold.ttf);
@@ -149,16 +197,15 @@ a.width {
 
 #Contact h2{
 	margin: 0;
-	padding: 0;
+	padding-bottom: 1em;
 	margin: 0;
 }
 
 #Contact label{
 	display: block;
 	float: left;
-	width: 46%;
+	width: 50%;
   	margin: 0 auto;
-  	padding-right: 2%;
 }
 
 #Contact input{
@@ -171,7 +218,8 @@ a.width {
 }
 
 #Contact textarea{
-	width: 200%
+	width: 200%;
+	padding: 0;
 }
 
 #submit-button{

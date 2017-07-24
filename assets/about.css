@@ -1,3 +1,51 @@
+@media (max-width: 1400px){
+	#logo{
+		display: none;
+	}
+
+	#bottom-logo p{
+		position: absolute;
+		color: #FEFCFB;
+		text-align: center;
+		margin: 0px;
+		width: 100%;
+		top: 97%;
+		font-size: 0.8vw;
+	}
+}
+
+@media (min-width: 1400px){
+	#logo{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 5%;
+	height: 100%;
+	width: 10%;
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	}
+
+	#bottom-logo{
+		display: block;
+		position: relative;
+		height: 100%;
+		background-image: url(logo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#bottom-logo p{
+		position: absolute;
+		color: #FEFCFB;
+		text-align: center;
+		margin: 0px;
+		width: 100%;
+		top: 57%;
+		font-size: 0.8vw;
+	}
+}
+
 @font-face{
 	font-family: OpenSans-Bold;
 	src: url(OpenSans-Bold.ttf);
@@ -14,6 +62,7 @@ html{
 
 body{
 	margin:0px;
+	width: 100%;
 	height: 100%;
 	font-family:"OpenSans-Bold";
 }
@@ -21,6 +70,7 @@ body{
 header{
 	position: fixed;
 	width: 100%;
+	height: 20%;
 	top: 0;
 	z-index: 1;
 }
@@ -66,34 +116,34 @@ a.width {
 	display: none;
 }
 
-ul{
+#navbar ul{
 	margin:0px;
 	padding:0px;
 }
 
-ul li{
+#navbar ul li{
 	list-style:none;
 	text-align: center;
 	height: 10vh;
 }
 
-ul li:nth-child(1) {
+#navbar ul li:nth-child(1) {
 	background:#067BC2;
 }
 
-ul li:nth-child(2) {
+#navbar ul li:nth-child(2) {
 	background:#0E6BA8;
 }
 
-ul li:nth-child(3) {
+#navbar ul li:nth-child(3) {
 	background: #034078;
 }
 
-ul li:nth-child(4) {
+#navbar ul li:nth-child(4) {
 	background: #001F54;
 }
 
-ul li a{
+#navbar ul li a{
 	color: white;
 	text-decoration: none;
 	padding: 3.3vh 10px;
@@ -146,14 +196,143 @@ section{
 
 }
 
-#landing-image h3{
-	margin: 0px;
-	font-family: 'OpenSans-Regular';
+#landing-image h2{
 	position: absolute;
-	font-size: 3em;
-	font-weight: 500;
-	padding-left: 5%;
-	top: 20%;
+	margin: 0px;
 	color: #FEFCFB;
+	font-size: 4em;
+	left: 6%;
+	top: 10%;
+
+}
+
+#labels{
+	width: 100%;
+	height: 100%;
+}
+
+#labels ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	left: 6%;
+	top: 20%;
+	font-family: 'OpenSans-Regular';
+	font-size: 3em;
+	padding-bottom: 40px;
+	border-bottom: 2px solid rgba(255,255,255,0.3);
+	width: 94%;
+}
+
+#labels ul li{ 
+	display: inline; 
 	white-space: pre;
+}
+
+#labels ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.clients-belt{
+	width: 100%;
+	position: relative;
+}
+
+.client-unit{
+	max-width: 940px;
+	margin: 0 0 50px -470px;
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	display: none;
+}
+
+.client-unit.active-client{
+	display: flex;
+}
+
+.client-content{
+	font-size: 18px;
+	font-weight: 300;
+	padding-right: 40px;
+}
+.client-content p{
+	font-family: 'OpenSans-Regular';
+	font-size: 16px;
+	margin:0;
+}
+
+.client-name{
+	display: block;
+	color: #001F54;
+}
+
+.client-title{
+	font-family: 'OpenSans-Regular';
+	color: #0E6BA8;
+}
+
+.client-desc{
+	min-width: 300px;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+	color: #001F54;
+}
+
+.client-logos{
+	position: relative;
+	max-width: 700px;
+	margin: 300px auto 0;
+	align-content: space-around;
+	justify-content: center;
+	display: flex;
+}
+
+.client-logo{
+	height: 80px;
+	min-width: 200px;
+	background-image: url(logo1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip:content-box;
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+.client-logo.active-client{
+	padding-bottom: 4px;
+   	border-bottom: 4px #034078 solid;
+}
+
+.client-controls{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-height: 400px;
+}
+
+.client-control-next{
+	position: absolute;
+	top: 30%;
+	right: 10px;
+	cursor: pointer;
+}
+
+.client-control-back{
+	top: 30%;
+	left: 10px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#Layer_1{
+	height: 40px;
+	width: 40px;
 }
