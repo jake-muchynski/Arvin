@@ -35,7 +35,7 @@
 
 	<div class="client-logos">
 		{% for client in site.data.settings.clients %}
-		<div class="client-logo" style="background-image: url(/assets/{{ client.logo }});"></div>
+		<div class="client-logo" style="background-image: url({{ site.github.url }}/assets/{{ client.logo }});"></div>
 		{% endfor %}
 
 	</div>

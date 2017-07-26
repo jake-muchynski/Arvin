@@ -1,3 +1,5 @@
+---
+---
 @media (max-width: 850px){
 	#logo{
 		display: none;
@@ -22,7 +24,7 @@
 	left: 5%;
 	height: 100%;
 	width: 100%;
-	background-image: url(assets/img/logo.png);
+	background-image: url({{ site.github.url }}/assets/img/logo.png);
 	background-repeat: no-repeat;
 	}
 
@@ -30,7 +32,7 @@
 		display: block;
 		position: relative;
 		height: 100%;
-		background-image: url(assets/img/logo.png);
+		background-image: url({{ site.github.url }}/assets/img/logo.png);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -48,12 +50,12 @@
 
 @font-face{
 	font-family: OpenSans-Bold;
-	src: url(assets/fonts/OpenSans-Bold.ttf);
+	src: url({{ site.github.url }}/assets/fonts/OpenSans-Bold.ttf);
 }
 
 @font-face{
 	font-family: OpenSans-Regular;
-	src: url(assets/fonts/OpenSans-Regular.ttf);
+	src: url({{ site.github.url }}/assets/fonts/OpenSans-Regular.ttf);
 }
 
 html{
