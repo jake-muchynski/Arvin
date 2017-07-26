@@ -8,7 +8,7 @@
 		color: #FEFCFB;
 		text-align: center;
 		margin: 0px;
-		width: 100%;
+		width: 20%;
 		top: 97%;
 		font-size: 0.8vw;
 	}
@@ -20,8 +20,8 @@
 	position: absolute;
 	top: 10px;
 	left: 5%;
-	height: 100%;
-	width: 100%;
+	height: 20%;
+	width: 20%;
 	background-image: url(/assets/img/logo.png);
 	background-repeat: no-repeat;
 	}
@@ -67,9 +67,8 @@ body{
 }
 
 header{
-	position: fixed;
 	width: 100%;
-	height: 20%;
+	height: 10%;
 	top: 0;
 	z-index: 1;
 }
@@ -82,7 +81,7 @@ header span h1{
 	text-align: center;
 	padding-top: .75vh;
 	margin: 0px;
-	color: #FEFCFB;
+	color: #067BC2;
 	font-size: 3em;
 }
 
@@ -94,50 +93,6 @@ header span h1{
 	position: fixed;
 	left: 80%;
 	top:0px;
-}
-
-#left-half{
-	position: absolute;
-	background-image: url('/assets/img/239H.jpg');
-	background-size: cover;
-	background-position: center;
-	background-color: #FF5E5B;
-	background-blend-mode: multiply;
-	height: 100vh;
-	width: 50%;
-	left: 0px;
-}
-
-#left-half h2{
-	color: #FEFCFB;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 100vh; 
-	font-size: 5vw;
-	margin: 0px;
-
-}
-
-#right-half{
-	position: absolute;
-	background-image: url('/assets/img/375H.jpg');
-	background-size: cover;
-	background-position: center;
-	background-color: #067BC2;
-	background-blend-mode: multiply;
-	height: 100vh;
-	width: 50%;
-	right: 0px;
-}
-
-#right-half h2{
-	color: #FEFCFB;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 100vh; 
-	font-size: 5vw;
-	margin: 0px;
-
 }
 
 a.width {
@@ -158,34 +113,34 @@ a.width {
 	display: none;
 }
 
-ul{
+#navbar ul{
 	margin:0px;
 	padding:0px;
 }
 
-ul li{
+#navbar ul li{
 	list-style:none;
 	text-align: center;
 	height: 10vh;
 }
 
-ul li:nth-child(1) {
+#navbar ul li:nth-child(1) {
 	background:#067BC2;
 }
 
-ul li:nth-child(2) {
+#navbar ul li:nth-child(2) {
 	background:#0E6BA8;
 }
 
-ul li:nth-child(3) {
+#navbar ul li:nth-child(3) {
 	background: #034078;
 }
 
-ul li:nth-child(4) {
+#navbar ul li:nth-child(4) {
 	background: #001F54;
 }
 
-ul li a{
+#navbar ul li a{
 	color: white;
 	text-decoration: none;
 	padding: 3.3vh 10px;
@@ -209,7 +164,7 @@ ul li a{
 
 #navbar-button span{
 	height:1px;
-	background:#FEFCFB;
+	background:#067BC2;
 	margin-bottom:5px;
 	display:block;
 }
@@ -222,15 +177,81 @@ ul li a{
 	width:50%;
 }
 
-#landing{
-	height: 100vh;
-}
-
 #wrapper{
 	position: absolute;
+	top: 0;
 	width: 100%;
 	height: 100%;
 }
+
 #wrapper.compress{
 	width: 80%;
+}
+
+section{
+	width: 100%;
+	height: 90%;
+	background-color: #0A1128;
+}
+
+#landing{
+	background-image: url(/assets/img/service.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #034078;
+	background-blend-mode: multiply;
+	width: 100%;
+	height: 50%;
+}
+
+#landing h2{
+	margin: 0;
+	padding-top: 6%;
+	padding-bottom: 1%;
+	text-align: center;
+	font-size: 32px;
+	color: #FEFCFB;
+}
+
+#landing p{
+	font-family: "OpenSans-Regular";
+	margin: 0 auto;
+	text-align: center;
+	max-width: 800px;
+	color: #FEFCFB;
+}
+
+#text ul{
+	font-size: 24px;
+	padding-top: 1%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+#text ul li{
+	color: #FEFCFB;
+	margin: 0 auto;
+	white-space: pre;
+
+}
+
+#icons{
+	font-size: 24px;
+	padding-top: 7%;
+	margin: 0 auto;
+	max-width: 1200px;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+#icons i{
+	color: #0E6BA8;
+	margin: 0 auto;
 }
