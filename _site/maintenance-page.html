@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Arvin Air</title>
+	<link rel="stylesheet" href="/assets/css/information.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+	<span><h1>ARVIN AIR SYSTEMS</h1></span>
+	<div id="logo">
+	</div>
+	<div id="navbar">
+		<ul>
+			<div id="button-close">
+				<li><a href="#" class="width">X</a></li>
+			</div>
+			<li><a href="index.html" class="width">HOME</a></li>
+			<li><a href="about-page.html" class="width">ABOUT US</a></li>
+			<li><a href="contact-page.html" class="width">CONTACT US</a></li>
+		</ul>
+		<div id="bottom-logo">
+		<p>905-643-6744 | 331 Glover Road, Stoney Creek,ON</p>
+		</div>
+	</div>
+	<div id="navbar-button">
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
+</header>
+
+	<section>
+	<div id="landing-image">
+		<h2>MAINTENANCE</h2>
+		<div id="labels">
+			<ul>
+				<li>The Arvin Advantage</li>
+			</ul>
+		</div>
+	</div>
+	<style>
+		#landing-image{
+			background-image: url(/assets/img/maintenance.jpg)
+		}
+	</style>
+	<div id="info">
+		<ul>
+			<li>We have on-call service available 24 hours per day, 7 days a week</li>
+			<li>Arvin Air is committed to 30 minutes reaction time when production is affected</li>
+			<li>We offer same day “fix the problem the first time” service</li>
+			<li>Arvin Air offers pressure washing which is the most important preventative maintenance function for equipment reliability and energy savings</li>
+			<li>All of our technicians are licensed, knowledgeable and experienced in the industrial and commercial sector. Some technicians have been with us since Arvin Air’s inception in 1972</li>
+			<li>Our agreements provide your company with priority service, and a continuous improvement maintenance program enabling energy savings and reducing emergency breakdowns</li>
+			<li>A maintenance and/or energy savings agreements can be planned, scheduled and monitored entirely by Arvin Air personnel</li>
+			<li>Arvin Air provides an annual written report of all services performed at your facility. All work orders and recommendations are kept on file to enable quick reference</li>
+		</ul>
+	</div>
+</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$('#navbar').addClass('invisible')
+	$('#left-half').addClass('expand')
+	$('#right-half').addClass('expand')
+	$(document).ready(function(){
+		$('#navbar-button').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	$(document).ready(function(){
+		$('#button-close').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	</script>
+</div>
+</body>

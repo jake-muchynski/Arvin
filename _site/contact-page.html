@@ -3,12 +3,13 @@
 
 <head>
 	<title>Arvin Air</title>
-	<link rel="stylesheet" href="assets/contact.css">
+	<link rel="stylesheet" href="/assets/css/contact.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+<div id="wrapper">
 	<header>
 	<span><h1>ARVIN AIR SYSTEMS</h1></span>
 	<div id="logo">
@@ -44,6 +45,8 @@
 			<label>Your Email
 			<input type="email" name="_replyto"></label>
 
+			<input type="hidden" name="_subject" value="Contact" />
+
 			<label><span>Description</span><textarea name="message"></textarea></label>
 			
 			<div id="submit-button">
@@ -65,17 +68,16 @@
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	</script>
+</div>
 </body>

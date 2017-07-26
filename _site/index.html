@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div id="wrapper">
 	<header>
 	<span><h1>ARVIN AIR SYSTEMS</h1></span>
 	<div id="logo">
@@ -32,7 +33,7 @@
 			<span></span>
 	</div>
 </header>
-	
+
 	<section>
 <div id="landing"> 
 	<div id="left-half">
@@ -55,19 +56,19 @@
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
+
 		});
 	});
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	</script>
+</div>
 </body>
 
 </html>

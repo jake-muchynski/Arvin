@@ -3,13 +3,13 @@
 
 <head>
 	<title>Arvin Air</title>
-	<link rel="stylesheet" href="assets/about.css">
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="/assets/css/about.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+<div id="wrapper">
 	<header>
 	<span><h1>ARVIN AIR SYSTEMS</h1></span>
 	<div id="logo">
@@ -39,10 +39,11 @@
 		<h2>HVAC</h2>
 		<div id="labels">
 			<ul>
-			<li><a href="#">Installation.  </a></li>
-			<li><a href="#">Maintenance.  </a></li>
-			<li><a href="#">Sheet Metal.  </a></li>
-			<li><a href="#">Efficiency.  </a></li>
+			<li><a href="installation-page.html">Installation.  </a></li>
+			<li><a href="maintenance-page.html">Maintenance.  </a></li>
+			<li><a href="sheetmetal-page.html">Sheet Metal.  </a></li>
+			<li><a href="energy-conservation-page.html">Efficiency.  </a></li>
+			<li><a href="arvin-advantage-page.html">Advantage.  </a></li>
 			</ul>
 		</div>
 	</div>
@@ -119,13 +120,13 @@
 
 	<div class="client-logos">
 		
-		<div class="client-logo" style="background-image: url(/assets/logo1.jpg);"></div>
+		<div class="client-logo" style="background-image: url(/assets/img/logo1.jpg);"></div>
 		
-		<div class="client-logo" style="background-image: url(/assets/logo2.jpg);"></div>
+		<div class="client-logo" style="background-image: url(/assets/img/logo2.jpg);"></div>
 		
-		<div class="client-logo" style="background-image: url(/assets/logo3.png);"></div>
+		<div class="client-logo" style="background-image: url(/assets/img/logo3.png);"></div>
 		
-		<div class="client-logo" style="background-image: url(/assets/logo4.jpg);"></div>
+		<div class="client-logo" style="background-image: url(/assets/img/logo4.jpg);"></div>
 		
 
 	</div>
@@ -134,7 +135,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+</div>
 	<script>
 	$('#navbar').addClass('invisible')
 	$('#left-half').addClass('expand')
@@ -143,16 +144,14 @@
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	</script>

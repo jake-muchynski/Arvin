@@ -6,19 +6,19 @@
 
 <head>
 	<title>Arvin Air</title>
-	<link rel="stylesheet" href="assets/about.css">
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="/assets/css/about.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+<div id="wrapper">
 	{% include header.html %}
 
 	{% include about.html %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+</div>
 	<script>
 	$('#navbar').addClass('invisible')
 	$('#left-half').addClass('expand')
@@ -27,16 +27,14 @@
 		$('#navbar-button').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	$(document).ready(function(){
 		$('#button-close').click(function(){
 			$('#navbar').toggleClass("visible invisible")
 			$('#navbar-button').toggleClass("visible invisible")
-			$('#left-half').toggleClass("compress expand")
-			$('#right-half').toggleClass("compress expand")
+			$('#wrapper').toggleClass("compress expand")
 		});
 	});
 	</script>
