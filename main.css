@@ -119,6 +119,7 @@
 		margin: 0 auto;
 		white-space: pre;
 		font-size: 2vw;
+		height: 100%;
 
 	}
 
@@ -301,6 +302,7 @@ section{
 
 #landing p{
 	font-family: "OpenSans-Regular";
+	font-size: 1vw;
 	margin: 0 auto;
 	text-align: center;
 	max-width: 800px;
