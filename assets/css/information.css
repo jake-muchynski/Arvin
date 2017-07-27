@@ -272,3 +272,17 @@ section{
 #wrapper.compress{
 	width: 80%;
 }
+
+#title{
+	position: absolute;
+	width: 100%;
+	height: 10%;
+}
+
+#title h1{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	word-wrap: break-word;
+	color: #FEFCFB;
+}

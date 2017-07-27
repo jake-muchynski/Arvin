@@ -11,9 +11,13 @@
 <body>
 <div id="wrapper">
 	<header>
-	<span><h1>ARVIN AIR SYSTEMS</h1></span>
+	<div id="title">
+		<h1>ARVIN AIR SYSTEMS</h1>
+	</div>
+
 	<div id="logo">
 	</div>
+
 	<div id="navbar">
 		<ul>
 			<div id="button-close">
@@ -78,6 +82,11 @@
 			$('#wrapper').toggleClass("compress expand")
 		});
 	});
+	</script>
+
+	<script src="/assets/js/jquery.fittext.js"></script>
+	<script>
+		$("#title").fitText(2, { minFontSize: '10px', maxFontSize: '30px' });
 	</script>
 </div>
 </body>

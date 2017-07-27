@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://use.fontawesome.com/6eb83e992a.js"></script>
+
 </head>
 
 <body>
@@ -39,6 +40,12 @@
 		});
 	});
 	</script>
+
+	<script src="{{ site.github.url }}/assets/js/jquery.fittext.js"></script>
+	<script>
+		$("#title").fitText(2, { minFontSize: '10px', maxFontSize: '30px' });
+	</script>
+
 </div>
 </body>
 
