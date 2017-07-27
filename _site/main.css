@@ -1,4 +1,4 @@
-@media (max-width: 850px){
+@media (max-width: 950px){
 	#logo{
 		display: none;
 	}
@@ -38,7 +38,7 @@
 	}
 }
 
-@media (min-width: 850px){
+@media (min-width: 950px){
 	#logo{
 	display: block;
 	position: absolute;
@@ -80,6 +80,90 @@
 	}
 }
 
+@media (min-height: 700px){
+	header{
+		height: 10%;
+	}
+	#landing{
+		background-image: url(/assets/img/service.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #034078;
+		background-blend-mode: multiply;
+		width: 100%;
+		height: 50%;
+	}
+	#landing h2{
+		padding-top: 6%;
+	}
+	section{
+		height: 90%;
+	}
+	#text ul{
+		font-size: 24px;
+		padding-top: 1%;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 0 auto;
+		max-width: 1200px;
+		display: flex;
+		list-style-type: none;
+		justify-content: space-between;
+	}
+
+	#text ul li{
+		color: #FEFCFB;
+		margin: 0 auto;
+		white-space: pre;
+		font-size: 2vw;
+
+	}
+
+	#icons{
+		font-size: 24px;
+		padding-top: 7%;
+		margin: 0 auto;
+		max-width: 1200px;
+		display: flex;
+		list-style-type: none;
+		justify-content: space-between;
+	}
+
+	#icons i{
+		color: #0E6BA8;
+		margin: 0 auto;
+	}
+}
+
+@media(max-height: 700px){
+	section{
+		height: 100%;
+	}
+
+	#landing h2{
+		padding-top: 15%;
+	}
+	#landing{
+		background-image: url(/assets/img/service.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #034078;
+		background-blend-mode: multiply;
+		width: 100%;
+		height: 100%;
+	}
+
+	#icons{
+		display: none;
+	}
+
+	#text{
+		display: none;
+	}
+}
+
 @font-face{
 	font-family: OpenSans-Bold;
 	src: url(/assets/fonts/OpenSans-Bold.ttf);
@@ -102,7 +186,6 @@ body{
 
 header{
 	width: 100%;
-	height: 10%;
 	top: 0;
 	z-index: 1;
 }
@@ -203,24 +286,12 @@ a.width {
 
 section{
 	width: 100%;
-	height: 90%;
 	background-color: #0A1128;
 }
 
-#landing{
-	background-image: url(/assets/img/service.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #034078;
-	background-blend-mode: multiply;
-	width: 100%;
-	height: 50%;
-}
 
 #landing h2{
 	margin: 0;
-	padding-top: 6%;
 	padding-bottom: 1%;
 	text-align: center;
 	font-size: 32px;
@@ -233,41 +304,6 @@ section{
 	text-align: center;
 	max-width: 800px;
 	color: #FEFCFB;
-}
-
-#text ul{
-	font-size: 24px;
-	padding-top: 1%;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 0 auto;
-	max-width: 1200px;
-	display: flex;
-	list-style-type: none;
-	justify-content: space-between;
-}
-
-#text ul li{
-	color: #FEFCFB;
-	margin: 0 auto;
-	white-space: pre;
-	font-size: 2vw;
-
-}
-
-#icons{
-	font-size: 24px;
-	padding-top: 7%;
-	margin: 0 auto;
-	max-width: 1200px;
-	display: flex;
-	list-style-type: none;
-	justify-content: space-between;
-}
-
-#icons i{
-	color: #0E6BA8;
-	margin: 0 auto;
 }
 
 #title{
