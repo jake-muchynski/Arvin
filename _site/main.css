@@ -8,7 +8,7 @@
 		color: #FEFCFB;
 		text-align: center;
 		margin: 0px;
-		width: 20%;
+		width: 100%;
 		top: 97%;
 		font-size: 0.8vw;
 	}
@@ -26,7 +26,7 @@
 
 @media(max-width: 470px){
 	#navbar-button{
-		top: 5%;
+		top: 10%;
 		text-align: center;
 		display: block;
 		width:20px;
@@ -140,9 +140,8 @@
 	section{
 		height: 100%;
 	}
-
 	#landing h2{
-		padding-top: 15%;
+		padding-top: 20%;
 	}
 	#landing{
 		background-image: url(/assets/img/service.jpg);
@@ -251,7 +250,7 @@ a.width {
 	color: white;
 	text-decoration: none;
 	padding: 3.3vh 10px;
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 #navbar-button.invisible{
