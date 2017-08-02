@@ -139,6 +139,8 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/assets/js/jquery.fittext.js"></script>
+	
 </div>
 	<script>
 	$('#navbar').addClass('invisible')
@@ -158,11 +160,6 @@
 			$('#wrapper').toggleClass("compress expand")
 		});
 	});
-	</script>
-
-	<script src="/assets/js/jquery.fittext.js"></script>
-	<script>
-		$("#title").fitText(2, { minFontSize: '10px', maxFontSize: '30px' });
 	</script>
 
 	<script>
@@ -207,4 +204,11 @@
 			});
 		})();
 	</script>
+
+	<script>
+		$("#title").fitText(2.5, {maxFontSize: '30px' });
+		$("#landing-image").fitText(1, {maxFontSize: '48px' });
+		$("#labels").fitText(4.5, {maxFontSize: '48px', minFontSize: '10px' });
+	</script>
+
 </body>
