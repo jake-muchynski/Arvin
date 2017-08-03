@@ -239,7 +239,7 @@ section{
 #landing-image{
 	height: 50%;
 	width: 100%;
-	background-image: url({{ site.github.url }}/assets/img/welder.jpeg);
+	background-image: url({{ site.github.url }}/assets/img/about.jpg);
 	background-size: cover;
 	background-position: center;
 	background-color: #2c3e50;
@@ -414,5 +414,6 @@ h3{
 
 	#labels ul{
 		top: 20%;
+		padding-top: 5%;
 	}
 }
