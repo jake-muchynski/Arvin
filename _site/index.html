@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Arvin Air</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/6eb83e992a.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+	<div id="title">
+		<h1>ARVIN AIR SYSTEMS</h1>
+	</div>
+
+	<div id="logo">
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<div id="button-close">
+				<li><a href="#" class="width">X</a></li>
+			</div>
+			<li><a href="index.html" class="width">HOME</a></li>
+			<li><a href="careers-page.html" class="width">CAREERS</a></li>
+			<li><a href="about-page.html" class="width">ABOUT US</a></li>
+			<li><a href="contact-page.html" class="width">CONTACT US</a></li>
+		</ul>
+		<div id="bottom-logo">
+		<p>905-643-6646 | 331 Glover Road, Stoney Creek,ON</p>
+		</div>
+	</div>
+	<div id="navbar-button">
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
+</header>
+
+	<section>
+	<div id="landing"> 
+		<h2>Commercial & Industrial HVAC Solutions</h2>
+		<p>We have been heating,venting, air conditioning (HVAC) contractors since 1972.We specialize in the installation and service of HVAC equipment in the industrial/commercial sector of the greater Hamilton, Burlington, Oakville and Grimbsy area.</p>
+	</div>
+	<div id="icons">
+		<i class="fa fa-fire fa-5x" aria-hidden="true"></i></i>
+		<i class="fa fa-snowflake-o fa-5x" aria-hidden="true"></i>
+		<i class="fa fa-wrench fa-5x" aria-hidden="true"></i>
+	</div>
+	<div id="text">
+		<ul>
+			<li> Heating    </li>
+			<li>Cooling</li>
+			<li>Sheet Metal</li>
+		</ul>
+	</div>
+</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/assets/js/jquery.fittext.js"></script>
+
+	<script>
+	$('#navbar').addClass('invisible')
+	$('#left-half').addClass('expand')
+	$('#right-half').addClass('expand')
+	$(document).ready(function(){
+		$('#navbar-button').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+
+		});
+	});
+	$(document).ready(function(){
+		$('#button-close').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	</script>
+
+	
+	<script>
+		$("#title").fitText(2.5, {maxFontSize: '30px' });
+		$("#icons").fitText(2.5, {maxFontSize: '30px' });
+	</script>
+
+</div>
+</body>
+
+</html>

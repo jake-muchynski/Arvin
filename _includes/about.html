@@ -1,0 +1,43 @@
+<section>
+	<div id="landing-image">
+		<h2>HVAC</h2>
+		<div id="labels">
+			<ul>
+			<li><a href="installation-page.html">Installation.  </a></li>
+			<li><a href="maintenance-page.html">Maintenance.  </a></li>
+			<li><a href="sheetmetal-page.html">Sheet Metal.  </a></li>
+			<li><a href="energy-conservation-page.html">Efficiency.  </a></li>
+			<li><a href="arvin-advantage-page.html">Advantage.  </a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h3>Testimonials</h3>
+	<div class="client-controls">
+		<div class="client-control-next">{% include icons/icon-next.html %}</div>
+		<div class="client-control-back">{% include icons/icon-prev.html %}</div>
+	</div>
+
+	<div class="clients-belt">
+		{% for client in site.data.settings.clients %}
+		<div class="client-unit">
+			<div class="client-desc">
+					<strong class="client-name">{{ client.name }}</strong>
+					<em class="client-title">{{ client.title }}</em>
+			</div>
+
+			<div class="client-content">
+				{{ client.quote }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="client-logos">
+		{% for client in site.data.settings.clients %}
+		<div class="client-logo" style="background-image: url({{ site.github.url }}/assets/{{ client.logo }});"></div>
+		{% endfor %}
+
+	</div>
+</section>
+

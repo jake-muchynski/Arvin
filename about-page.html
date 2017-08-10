@@ -1,0 +1,93 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Arvin Air</title>
+	<link rel="stylesheet" href="{{ site.github.url }}/assets/css/about.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="wrapper">
+	{% include header.html %}
+
+	{% include about.html %}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="{{ site.github.url }}/assets/js/jquery.fittext.js"></script>
+	
+</div>
+	<script>
+	$('#navbar').addClass('invisible')
+	$('#left-half').addClass('expand')
+	$('#right-half').addClass('expand')
+	$(document).ready(function(){
+		$('#navbar-button').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	$(document).ready(function(){
+		$('#button-close').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	</script>
+
+	<script>
+		(function clientStuff() {
+			$('.client-unit').first().addClass('active-client')
+			$('.client-logo').first().addClass('active-client')
+
+			$('.client-logo').click(function() {
+				var $this = $(this),
+					$siblings = $this.parent().children(),
+					position = $siblings.index($this)
+
+				$('.client-unit').removeClass('active-client').eq(position).addClass('active-client')
+				$siblings.removeClass('active-client')
+				$this.addClass('active-client')
+			});
+
+			$('.client-control-next, .client-control-back').click(function() {
+				    var $this = $(this),
+				        curActiveClient = $('.clients-belt').find('.active-client'),
+				        position = $('.clients-belt').children().index(curActiveClient),
+				        clientNum = $('.client-unit').length;
+
+				if($this.hasClass('client-control-next')){
+					if(position < clientNum -1){
+						$('.active-client').removeClass('active-client').next().addClass('active-client');
+					}
+					else {
+						$('.client-unit').removeClass('active-client').first().addClass('active-client');
+						$('.client-logo').removeClass('active-client').first().addClass('active-client');
+					}
+				}
+				else {
+			        if (position === 0) {
+			          $('.client-unit').removeClass('active-client').last().addClass('active-client');
+			          $('.client-logo').removeClass('active-client').last().addClass('active-client');
+			        } 
+			        else {
+			          $('.active-client').removeClass('active-client').prev().addClass('active-client');
+			        }
+      			}
+			});
+		})();
+	</script>
+
+	<script>
+		$("#title").fitText(2.5, {maxFontSize: '30px' });
+		$("#landing-image").fitText(1, {maxFontSize: '48px' });
+		$("#labels").fitText(4.5, {maxFontSize: '48px', minFontSize: '10px' });
+	</script>
+
+</body>

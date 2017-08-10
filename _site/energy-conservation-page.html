@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<title>Arvin Air</title>
+	<link rel="stylesheet" href="/assets/css/information.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+	<div id="title">
+		<h1>ARVIN AIR SYSTEMS</h1>
+	</div>
+
+	<div id="logo">
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<div id="button-close">
+				<li><a href="#" class="width">X</a></li>
+			</div>
+			<li><a href="index.html" class="width">HOME</a></li>
+			<li><a href="careers-page.html" class="width">CAREERS</a></li>
+			<li><a href="about-page.html" class="width">ABOUT US</a></li>
+			<li><a href="contact-page.html" class="width">CONTACT US</a></li>
+		</ul>
+		<div id="bottom-logo">
+		<p>905-643-6646 | 331 Glover Road, Stoney Creek,ON</p>
+		</div>
+	</div>
+	<div id="navbar-button">
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
+</header>
+
+	<section>
+	<div id="landing-image">
+		<h2>ENERGY CONSERVATION</h2>
+		<div id="labels">
+			<ul>
+				<li>The Arvin Advantage</li>
+			</ul>
+		</div>
+	</div>
+	<style>
+		#landing-image{
+			background-image: url(/assets/img/conservation.jpg)
+		}
+	</style>
+	<div id="paragraph">
+		<ul>
+			<li><h3>Case Study:Pollard Windows Saves $68,000 in Two Years</h3></li>
+			<li><h3>Pollard's Problem</h3></li>
+			<li>The 53 stand alone unit heaters were controlled by individual thermostats. The plant manager endured complaints from shop personnel of temperature fluctuations, caused by adjusting thermostats resulting in overheating & higher energy costs.</li>
+			<li><h3>Our Solution</h3></li>
+			<li>The Arvin Air System’s team linked 53 unit heaters in 4 separate buildings and allocated them to specific zones. All of the unit heaters are now controlled by a keypad in the plant manager’s office. This system enables the plant manager to set and monitor temperatures in all areas of the facility and configure setback times.</li>
+			<li><h3>The Result</h3></li>
+			<li>Employees comfort is enhanced and plant temperature fluctuations are minimized. Also, in two years Pollard Windows saved over $68,000 in natural gas expenditures.</li>
+		</ul>
+	</div>
+</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script>
+	$('#navbar').addClass('invisible')
+	$('#left-half').addClass('expand')
+	$('#right-half').addClass('expand')
+	$(document).ready(function(){
+		$('#navbar-button').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	$(document).ready(function(){
+		$('#button-close').click(function(){
+			$('#navbar').toggleClass("visible invisible")
+			$('#navbar-button').toggleClass("visible invisible")
+			$('#wrapper').toggleClass("compress expand")
+		});
+	});
+	</script>
+
+	<script src="/assets/js/jquery.fittext.js"></script>
+	<script>
+		$("#title").fitText(2.5, {maxFontSize: '30px' });
+		$("#landing-image").fitText(1.5, {maxFontSize: '48px' });
+		$("#labels").fitText(4.5, {maxFontSize: '48px', minFontSize: '10px' });
+	</script>
+</div>
+</body>
